@@ -1,37 +1,31 @@
-import React from "react";
-import {Nav} from "react-bootstrap";
-import { withRouter } from "react-router";
-import '../pages/style/Dashboard.css'
+import { useState } from 'react';
+import { FaBars,FaStethoscope,FaHome} from 'react-icons/fa';
+import { ProSidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
+import 'react-pro-sidebar/dist/css/styles.css';
 
 const Side = props => {
-   
+    const [isToggled,setIsToggled] = useState(false);
 
     return (
         <>
     
-            <Nav className="col-md-12 d-none d-md-block bg-light sidebar"
-            activeKey="/home"
-            onSelect={selectedKey => alert(`selected ${selectedKey}`)}
-            >
-                <div className="sidebar-sticky"></div>
-            <Nav.Item>
-                <Nav.Link href="/home">Active</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-                <Nav.Link eventKey="link-1">Link</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-                <Nav.Link eventKey="link-2">Link</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-                <Nav.Link eventKey="disabled" disabled>
-                Disabled
-                </Nav.Link>
-            </Nav.Item>
-            </Nav>
+    <ProSidebar collapsed={isToggled}>
+
+ <div>
+ <Menu iconShape="square" popperArrow={true}>
+     <MenuItem><button className="btn btn-success btn-block"style={{marginTop:"1em"}} onClick={()=>setIsToggled(!isToggled)}><FaBars/></button></MenuItem>
+    <MenuItem icon={<FaHome/>}>Home</MenuItem>
+    
+      <MenuItem icon={<FaStethoscope/>}>Book Appointment</MenuItem>
+      
+    
+  </Menu>
+ </div>
+</ProSidebar>
+
           
         </>
         );
   };
-  const Sidebar = withRouter(Side);
+  const Sidebar = Side
   export default Sidebar
