@@ -5,7 +5,7 @@ const Appointments = ()=>{
     const [show,setShow] = useState(false);
     return (<>
     <Alert variant="success" style={{textAlign:"center"}}>Appointment History and upcoming</Alert>
-    <Table striped bordered hover>
+    <Table table striped bordered hover>
   <thead>
     <tr>
       <th>#</th>
