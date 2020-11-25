@@ -4,7 +4,7 @@ import TextComponent from "../TextComponent/TextComponent";
 import Appointments from "../AppointmentsList/Appointments"
 const MainPage = (props) => {
     return (<><Col xs={10}>
-        <div className="container">
+        <div>
             <TextComponent />
             <Appointments />
         </div>

@@ -3,8 +3,8 @@ import { Card, Col, Form, Row,Alert } from 'react-bootstrap';
 const BookAppointment = () => {
     return (<>
         <Col xs={"10"}>
-            <div class="container-fluid">
-                <Card>
+            <div>
+                <Card style={{border:"none"}}>
                     <Card.Body>
                         <h2 className="text text-muted">Appointment type</h2>
                         <Row>

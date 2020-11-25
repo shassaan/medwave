@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaInfo} from 'react-icons/fa';
 import {Table,Alert,Modal,Button} from 'react-bootstrap';
+import AppointmentDetail from '../AppointmentDetail/AppointmentDetail';
 const Appointments = ()=>{
     const [show,setShow] = useState(false);
     return (<>
@@ -57,7 +58,7 @@ const Appointments = ()=>{
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h4>Cannabis_Recommendation</h4>
+        <AppointmentDetail/>
         
         
       </Modal.Body>

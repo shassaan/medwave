@@ -1,8 +1,8 @@
 import React from 'react';
 import {Card,Alert} from 'react-bootstrap';
 const TextComponent = () =>{
-    return (<Card>
-        <Card.Body>
+    return (<Card className="card border-light mb-3" style={{border:"none"}}>
+        <Card.Body >
       
         <Alert variant="success">
   <Alert.Heading>Hey, nice to see you</Alert.Heading>

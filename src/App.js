@@ -10,6 +10,7 @@ import {
 import MainPage from './MainPage/MainPage';
 import VideoCall from './VideoCall/VideoCall'
 import BookAppointment from './BookAppointment/BookAppointment';
+import UserProfile from './UserProfile/UserProfile';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Switch>
             <Route path="/book-appointment"><BookAppointment/></Route>
             <Route path="/video"><VideoCall/></Route>
+            <Route path="/user"><UserProfile/></Route>
             <Route path="/"><MainPage /></Route>
            
             </Switch>
