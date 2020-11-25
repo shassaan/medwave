@@ -14,7 +14,7 @@ const Side = props => {
 
                 <div>
                     <Menu iconShape="square" popperArrow={true}>
-                        <MenuItem><button className="btn btn-success btn-block" style={{ marginTop: "1em" }} onClick={() => setIsToggled(!isToggled)}><FaBars /></button></MenuItem>
+                        <MenuItem><button className="btn btn-success btn-sm centered" style={{ marginTop: "1em",border:'none' }} onClick={() => setIsToggled(!isToggled)}><FaBars /></button></MenuItem>
                         <MenuItem icon={<FaHome />}><Link to="/">Home</Link></MenuItem>
                         <MenuItem icon={<FaStethoscope />}><Link to="/book-appointment">Book Appointment</Link> </MenuItem>
                     </Menu>

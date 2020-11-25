@@ -5,6 +5,7 @@ const Appointments = ()=>{
     const [show,setShow] = useState(false);
     return (<>
     <Alert variant="success" style={{textAlign:"center"}}>Appointment History and upcoming</Alert>
+    <div className="table-responsive">
     <Table table striped bordered hover>
   <thead>
     <tr>
@@ -43,6 +44,7 @@ const Appointments = ()=>{
     </tr>
   </tbody>
 </Table>
+    </div>
 <Modal
       show={show}
       size="lg"

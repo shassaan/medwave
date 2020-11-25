@@ -3,8 +3,8 @@ import { Card, Col, Form, Row,Alert } from 'react-bootstrap';
 const BookAppointment = () => {
     return (<>
         <Col xs={"10"}>
-            <div class="container">
-                <Card style={{ padding: "2em" }}>
+            <div class="container-fluid">
+                <Card>
                     <Card.Body>
                         <h2 className="text text-muted">Appointment type</h2>
                         <Row>
@@ -50,19 +50,20 @@ const BookAppointment = () => {
                         <h2 className="text text-muted">Payment details</h2>
                         <Row>
                             <Col md={"6"}>
-                                <Form.Control type="text" placeholder="Card no." />
+                                <Form.Control type="text" placeholder="Card no." /> <br/>
                             </Col>
+                            
                             <Col md={"4"}>
-                                <Form.Control type="date" placeholder="Expiry" />
+                                <Form.Control type="date" placeholder="Expiry" /> <br/>
                             </Col>
 
-
+                            <br/>
 
                             <Col md={"2"}>
-                                <Form.Control type="text" placeholder="CVV" />
+                                <Form.Control type="text" placeholder="CVV" /> <br/> <br/>
                             </Col>
                         </Row>
-                        <br/>
+                        
                         <Row>
                             <Col><button className="btn btn-success">Book now</button></Col>
                         </Row>

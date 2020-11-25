@@ -6,9 +6,11 @@ const MainPage = (props) => {
     return (<><Col xs={10}>
         <div className="container">
             <TextComponent />
+            <Appointments />
         </div>
+        
     </Col>
-        <Col><Appointments /></Col></>)
+        <Col></Col></>)
 }
 
 export default MainPage;
