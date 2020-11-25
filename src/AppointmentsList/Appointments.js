@@ -22,7 +22,7 @@ const Appointments = ()=>{
       <td>30-Nov-2020 5:00 PM</td>
       <td>DOCTOR</td>
       <td>Cannabis_Recommendation</td>
-      <td><span className="badge badge-warning">missed</span></td>
+      <td><span className="badge badge-danger">missed</span></td>
       <td><a href="#" onClick={()=>setShow(true)} className="text text-info"><FaInfo style={{color:"mediumseagreen"}}/></a></td>
     </tr>
     <tr>
