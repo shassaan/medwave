@@ -3,13 +3,12 @@ import { Col } from 'react-bootstrap';
 import TextComponent from "../TextComponent/TextComponent";
 import Appointments from "../AppointmentsList/Appointments"
 const MainPage = (props) => {
-    return (<><Col xs={10}>
+    return (<>
         <div>
             <TextComponent />
             <Appointments />
         </div>
         
-    </Col>
         <Col></Col></>)
 }
 
