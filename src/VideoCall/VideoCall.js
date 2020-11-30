@@ -2,7 +2,6 @@ import React from 'react'
 import { Col } from 'react-bootstrap'
 const VideoCall = ()=>{
 return (<>
-<Col xs={"10"}>
 <div className="container" style={{margin:"2em"}}>
 <video  preload="auto" style={{width:"70%",position:"absolute"}}>
   <source src={`${process.env.PUBLIC_URL}/video.mp4`} type="video/mp4"/>
@@ -12,7 +11,6 @@ return (<>
   <source src={`${process.env.PUBLIC_URL}/video.mp4`} type="video/mp4"/>
 </video>
 </div>
-</Col>
 </>)
 }
 
