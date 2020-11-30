@@ -15,7 +15,7 @@ const BookAppointment = () => {
                                         type="radio"
                                         label={`Appointment Type 1`}
                                         name="appointmenttype"
-
+                                        onClick={e => console.log("Appointment 1 selected")}
                                     />
                                 </Alert>
 
@@ -28,6 +28,7 @@ const BookAppointment = () => {
                                         type="radio"
                                         label={`Appointment Type 2`}
                                         name="appointmenttype"
+                                        onClick={e => console.log("Appointment 2 selected")}
                                     />
                                 </Alert>
 
@@ -39,6 +40,7 @@ const BookAppointment = () => {
                                         style={{ padding: "1em", border: "1px dotted greenyellow" ,cursor:"pointer"}}
                                         type="radio"
                                         label={`Appointment Type 3`}
+                                        onClick={e => console.log("Appointment 3 selected")}
                                     name="appointmenttype"
                                     />
                                 </Alert>

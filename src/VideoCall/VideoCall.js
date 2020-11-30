@@ -2,7 +2,7 @@ import React from 'react'
 import { Col } from 'react-bootstrap'
 const VideoCall = ()=>{
 return (<>
-<div className="container" style={{margin:"2em"}}>
+<div className="container">
 <video  preload="auto" style={{width:"70%",position:"absolute"}}>
   <source src={`${process.env.PUBLIC_URL}/video.mp4`} type="video/mp4"/>
 </video>
