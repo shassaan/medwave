@@ -3,7 +3,7 @@ import { Card ,Col,Form} from 'react-bootstrap'
 const UserProfile = () => {
     const [isEditMode,setIsEditMode] = useState(false);
     return (
-        <Col xs={10}>
+       
        <div className="container">
  
             <h2>User Profile</h2>
@@ -96,7 +96,7 @@ const UserProfile = () => {
                 
             </div>
             </div>
-        </Col>
+     
        
     )
 }
