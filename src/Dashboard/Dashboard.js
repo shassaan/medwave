@@ -4,6 +4,7 @@ import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
 import Sidebar from "../SideBar/Sidebar";
 
 import '../App.css'
+import TopNavBar from "../NavBar/TopNavbar";
 
 
 const Dash = props => {
@@ -11,20 +12,19 @@ const Dash = props => {
 
     return (
         <>
-            <Container fluid>
-                <Row style={{ background: '#1d1d1d' }}>
+            
+                {/* <Row style={{ background: '#1d1d1d' }}>
 
                     <Col xs={2}> <img src={`${process.env.PUBLIC_URL}/Asset10_4x.png`} width="302" height="75" /></Col>
                     <Col xs={8}></Col>
                     <Col xs={2}></Col>
-                </Row>
+                </Row> */}
 
-                <Row>
-                    <Col xs={2}>
-                        <Sidebar />
-                    </Col>
+<TopNavBar/>
+
+                
                     {props.children}
-                </Row>
+                
 
 
 
@@ -32,7 +32,7 @@ const Dash = props => {
 
 
 
-            </Container>
+          
 
 
         </>
